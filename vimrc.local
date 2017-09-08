@@ -35,3 +35,6 @@ map m <Plug>(easymotion-s)
 
 nnoremap <C-]> g<C-]>
 
+set tags=./tags,tags;
+set wildignore+=log/**
+

@@ -30,12 +30,29 @@ export LC_ALL=en_US.UTF-8
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-#eval "$(rbenv init -)"
 
 stty -ixon
+stty erase '^?'
 
 # Golang
 export GOPATH="$HOME/codes/go"
 export PATH="$PATH:$GOPATH/bin"
+
+# Enable Ctrl-x-e to edit command line
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^xe' edit-command-line
+bindkey '^x^e' edit-command-line
+
+create_pr() {
+  currentBranch=$(git rev-parse --abbrev-ref HEAD)
+  template=$(cat ./.github/PULL_REQUEST_TEMPLATE)
+  description=${template//_____/$currentBranch}
+  fullMessage="$currentBranch\n\n$description"
+
+  git push origin "$currentBranch"
+  # hub pull-request -h "$currentBranch" -m "$title" -F "$description"
+  hub pull-request -h "$currentBranch" -m "$(printf $fullMessage)"
+}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
