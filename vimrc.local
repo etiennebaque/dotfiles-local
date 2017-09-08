@@ -1,0 +1,37 @@
+" Reactivating arrow keys
+noremap <Left> h
+noremap <Right> l
+noremap <Up> k
+noremap <Down> j
+
+" Remove that 80 character limit and that column
+set textwidth=0
+set colorcolumn=0
+
+" Color scheme
+colorscheme railscasts
+
+" vim-airline config
+let g:airline_powerline_fonts = 1
+
+" Custom key mappings
+map <S-F> :Ag
+
+nmap          <C-W>+     <C-W>+<SID>ws
+nmap          <C-W>-     <C-W>-<SID>ws
+nn <script>   <SID>ws+   <C-W>+<SID>ws
+nn <script>   <SID>ws-   <C-W>-<SID>ws
+nmap          <C-W>>     <C-W>><SID>ws
+nmap          <C-W><     <C-W><<SID>ws
+nn <script>   <SID>ws>   <C-W>><SID>ws
+nn <script>   <SID>ws<   <C-W><<SID>ws
+nmap          <SID>ws    <Nop>
+
+nmap          <F7>       :tabp<ENTER>
+nmap          <F8>       :tabn<ENTER>
+nmap          <C-Y>      :tabe<ENTER>
+
+map m <Plug>(easymotion-s)
+
+nnoremap <C-]> g<C-]>
+

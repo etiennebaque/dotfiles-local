@@ -1,0 +1,7 @@
+Plug 'easymotion/vim-easymotion'
+Plug 'vim-airline/vim-airline'
+Plug 'jpo/vim-railscasts-theme'
+Plug 'bogado/file-line'
+Plug 'dyng/ctrlsf.vim'
+Plug 'tpope/vim-vinegar'
+
