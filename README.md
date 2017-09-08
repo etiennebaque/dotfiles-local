@@ -5,7 +5,7 @@ Etienne's dotfiles
 2) Run the following:
 ```
 git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles
-git clone git://github.com/etiennebaque/dotfiles-local.git ~/dotfiles-local
+git clone git://github.com/etiennebaque/dotfiles.git ~/dotfiles-local
 env RCRC=$HOME/dotfiles/rcrc rcup
 ```
 
