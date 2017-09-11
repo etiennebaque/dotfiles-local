@@ -9,7 +9,7 @@ set textwidth=0
 set colorcolumn=0
 
 " Color scheme
-colorscheme railscasts
+colorscheme Tomorrow-Night
 
 " vim-airline config
 let g:airline_powerline_fonts = 1
