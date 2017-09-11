@@ -27,12 +27,16 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+if [ -d "$HOME/.rbenv/" ]; then
+  export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 stty -ixon
 stty erase '^?'
+
+# Tmuxinator
+source ~/.bin/tmuxinator.zsh
 
 # Golang
 export GOPATH="$HOME/codes/go"
@@ -56,3 +60,4 @@ create_pr() {
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.zshrc.secret ] && source ~/.zshrc.secret
