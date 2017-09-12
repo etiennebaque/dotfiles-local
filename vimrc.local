@@ -10,6 +10,8 @@ set colorcolumn=0
 
 " Color scheme
 colorscheme Tomorrow-Night
+set background=dark
+highlight Normal ctermbg=black
 
 " vim-airline config
 let g:airline_powerline_fonts = 1
