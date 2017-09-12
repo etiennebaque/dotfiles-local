@@ -9,5 +9,8 @@ git clone git://github.com/etiennebaque/dotfiles.git ~/dotfiles-local
 env RCRC=$HOME/dotfiles/rcrc rcup
 ```
 
+About the YouCompleteMe plugin, check out [this install
+guide](https://valloric.github.io/YouCompleteMe).
+
 Check out [thoughbot's dotfiles repo](https://github.com/thoughtbot/dotfiles) for more info.
 
