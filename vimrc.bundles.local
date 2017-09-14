@@ -5,4 +5,5 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'tpope/vim-vinegar'
 Plug 'Ardakilic/vim-tomorrow-night-theme'
 Plug 'Valloric/YouCompleteMe'
+Plug 'mtth/scratch.vim'
 

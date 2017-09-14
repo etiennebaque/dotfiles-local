@@ -40,3 +40,5 @@ nnoremap <C-]> g<C-]>
 set tags=./tags,tags;
 set wildignore+=log/**
 
+" Scratch plugin
+let g:scratch_autohide = 1
