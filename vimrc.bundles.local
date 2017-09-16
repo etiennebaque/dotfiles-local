@@ -7,4 +7,5 @@ Plug 'Ardakilic/vim-tomorrow-night-theme'
 Plug 'Valloric/YouCompleteMe'
 Plug 'mtth/scratch.vim'
 Plug 'rking/ag.vim'
-
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
