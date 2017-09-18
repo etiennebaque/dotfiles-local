@@ -46,9 +46,11 @@ set wildignore+=log/**
 let g:scratch_autohide = 1
 
 " ale - highlight settings
-
 highlight link ALEWarning NONE
 highlight ALEError ctermfg=255 ctermbg=124 guifg=#fb4934 guibg=#3c3836
 highlight ALEErrorSign ctermfg=255 ctermbg=124 guifg=#fb4934 guibg=#3c3836
 highlight ALEWarning ctermfg=255 ctermbg=130 guifg=#fe8019 guibg=#3c3836
 highlight ALEWarningSign ctermfg=255 ctermbg=130 guifg=#fe8019 guibg=#3c3836
+
+" copy to clipboard
+set clipboard=unnamed
