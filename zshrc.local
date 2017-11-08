@@ -35,11 +35,8 @@ fi
 stty -ixon
 stty erase '^?'
 
-# Tmuxinator
-source ~/.bin/tmuxinator.zsh
-
 # Golang
-export GOPATH="$HOME/codes/go"
+export GOPATH="$HOME/src/go"
 export PATH="$PATH:$GOPATH/bin"
 
 # Enable Ctrl-x-e to edit command line
