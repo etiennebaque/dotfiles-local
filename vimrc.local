@@ -54,3 +54,5 @@ highlight ALEWarningSign ctermfg=255 ctermbg=130 guifg=#fe8019 guibg=#3c3836
 
 " copy to clipboard
 set clipboard=unnamed
+
+let g:ag_highlight=1
