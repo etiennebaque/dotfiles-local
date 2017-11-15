@@ -14,7 +14,10 @@ set background=dark
 highlight Normal ctermbg=black
 
 " vim-airline config
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
+set laststatus=2
 
 " Custom key mappings
 map <S-F> :Ag
@@ -36,8 +39,11 @@ nmap          <C-Y>      :tabe<ENTER>
 nmap          <C-P>      :FZF<ENTER>
 
 map m <Plug>(easymotion-s)
-
 nnoremap <C-]> g<C-]>
+
+:nnoremap <Tab> :bnext<CR>
+:nnoremap <S-Tab> :bprevious<CR>
+:nnoremap <C-X> :bdelete<CR>
 
 set tags=./tags,tags;
 set wildignore+=log/**
