@@ -20,8 +20,6 @@ let g:airline_powerline_fonts = 1
 set laststatus=2
 
 " Custom key mappings
-map <S-F> :Ag
-
 nmap          <C-W>+     <C-W>+<SID>ws
 nmap          <C-W>-     <C-W>-<SID>ws
 nn <script>   <SID>ws+   <C-W>+<SID>ws
