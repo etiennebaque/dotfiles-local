@@ -5,11 +5,12 @@ Plug 'tpope/vim-vinegar'
 Plug 'Ardakilic/vim-tomorrow-night-theme'
 Plug 'Valloric/YouCompleteMe'
 Plug 'mtth/scratch.vim'
-Plug 'rking/ag.vim'
+Plug 'ggreer/the_silver_searcher'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-haml'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'yalesov/vim-emblem'
 
 UnPlug 'ctrlp.vim'
 UnPlug 'vim-elixir'
