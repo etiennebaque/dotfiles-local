@@ -3,5 +3,7 @@ alias tmux="tmux -2"
 # Aliases for Rails
 alias reset_test_db='RAILS_ENV=test bundle exec rake db:drop db:create db:schema:load db:seed_fu'
 
+alias recent="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' | head -n 5"
+
 [[ -f ~/.aliases.secret ]] && source ~/.aliases.secret
 
