@@ -16,7 +16,6 @@ highlight Normal ctermbg=black
 " vim-airline config
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_powerline_fonts = 1
 set laststatus=2
 
 " Custom key mappings
@@ -41,7 +40,8 @@ nnoremap <C-]> g<C-]>
 
 :nnoremap <Tab> :bnext<CR>
 :nnoremap <S-Tab> :bprevious<CR>
-:nnoremap <C-X> :bdelete<CR>
+" :nnoremap <C-X> :bdelete<CR>
+:nnoremap <C-X> :ene<CR>:bw #<CR>
 
 set tags=./tags,tags;
 set wildignore+=log/**
@@ -58,6 +58,3 @@ highlight ALEWarningSign ctermfg=255 ctermbg=130 guifg=#fe8019 guibg=#3c3836
 set clipboard=unnamed
 
 let g:ag_highlight=1
-
-" number toggle
-set number relativenumber
