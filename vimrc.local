@@ -58,3 +58,7 @@ highlight ALEWarningSign ctermfg=255 ctermbg=130 guifg=#fe8019 guibg=#3c3836
 set clipboard=unnamed
 
 let g:ag_highlight=1
+
+" indent guides
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
