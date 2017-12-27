@@ -2,11 +2,7 @@
 set -g status-bg '#272c2d'
 set -g status-fg '#ffffff'
 
-setw -g mode-mouse on
-set -g mouse-select-window on
-set -g mouse-select-pane on
-set -g mouse-resize-pane on
-set -g mouse-utf on
+set-option -g mouse on
 
 # CTRL+A instead of CTRL+B
 unbind C-b
