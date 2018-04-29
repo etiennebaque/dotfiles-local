@@ -15,6 +15,7 @@ highlight Normal ctermbg=black
 
 " vim-airline config
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_powerline_fonts = 1
 set laststatus=2
 
@@ -35,13 +36,18 @@ nmap          <C-Y>      :tabe<ENTER>
 
 nmap          <C-P>      :FZF<ENTER>
 
+map <C-n> :NERDTreeToggle<CR>
 map m <Plug>(easymotion-s)
 nnoremap <C-]> g<C-]>
 
-:nnoremap <Tab> :bnext<CR>
-:nnoremap <S-Tab> :bprevious<CR>
-" :nnoremap <C-X> :bdelete<CR>
-:nnoremap <C-X> :ene<CR>:bw #<CR>
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+nnoremap <C-X> :bp <BAR> bd #<CR>
+nmap <leader>bs :ls<CR>
+
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
 
 set tags=./tags,tags;
 set wildignore+=log/**
