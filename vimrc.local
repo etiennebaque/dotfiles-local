@@ -72,3 +72,6 @@ let g:indent_guides_guide_size = 1
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
+set re=1
+
+autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS

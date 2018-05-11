@@ -6,10 +6,12 @@ Plug 'Ardakilic/vim-tomorrow-night-theme'
 Plug 'mtth/scratch.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 Plug 'tpope/vim-haml'
 Plug 'yalesov/vim-emblem'
 Plug 'vim-scripts/HTML-AutoCloseTag'
+Plug 'Valloric/MatchTagAlways'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'ternjs/tern_for_vim'
 
