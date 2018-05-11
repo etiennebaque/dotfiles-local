@@ -6,6 +6,7 @@ ZSH_THEME="simple"
 plugins=(git gitfast history zeus ssh-agent bundler zsh-syntax-highlighting history-substring-search brew ruby)
 
 source $ZSH/oh-my-zsh.sh
+export PROMPT='%{$fg[yellow]%}%n@%m %{$fg[green]%}%~%{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color%} '
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export EDITOR='vim'
