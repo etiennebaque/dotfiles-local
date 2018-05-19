@@ -75,3 +75,5 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 set re=1
 
 autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
+
+set hidden

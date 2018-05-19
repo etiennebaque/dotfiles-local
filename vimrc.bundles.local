@@ -15,7 +15,7 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'ternjs/tern_for_vim'
 
-Plug 'ajh17/VimCompletesMe'
+Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 
 UnPlug 'ctrlp.vim'
