@@ -5,5 +5,7 @@ alias reset_test_db='RAILS_ENV=test bundle exec rake db:drop db:create db:schema
 
 alias recent="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' | head -n 5"
 
+alias copy="xclip -selection clipboard"
+
 [[ -f ~/.aliases.secret ]] && source ~/.aliases.secret
 
