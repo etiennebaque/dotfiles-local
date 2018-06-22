@@ -1,0 +1,4 @@
+apt-get install xclip
+apt-get install silversearcher-ag
+
+npm install -g diff-so-fancy
