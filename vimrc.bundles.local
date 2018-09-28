@@ -22,5 +22,4 @@ UnPlug 'ctrlp.vim'
 UnPlug 'vim-elixir'
 UnPlug 'vim-go'
 UnPlug 'vim-slim'
-UnPlug 'vim-fugitive'
 
