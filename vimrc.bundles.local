@@ -15,6 +15,7 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'ternjs/tern_for_vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'thoughtbot/vim-rspec'
 
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
