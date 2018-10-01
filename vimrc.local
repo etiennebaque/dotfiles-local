@@ -76,4 +76,7 @@ set re=1
 
 autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
 
+" vim git-gutter
+set updatetime=100
+
 set hidden
