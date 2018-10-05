@@ -36,7 +36,8 @@ nmap          <C-Y>      :tabe<ENTER>
 
 nmap          <C-P>      :FZF<ENTER>
 
-map <C-n> :NERDTreeToggle<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 map m <Plug>(easymotion-s)
 nnoremap <C-]> g<C-]>
 
