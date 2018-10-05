@@ -49,6 +49,8 @@ noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
 
+nnoremap <leader>gb :Gblame<CR>
+
 set tags=./tags,tags;
 set wildignore+=log/**
 
@@ -73,7 +75,6 @@ let g:indent_guides_guide_size = 1
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 set re=1
-
 autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
 
 " vim-gitgutter
