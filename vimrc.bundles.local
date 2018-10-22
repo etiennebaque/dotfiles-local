@@ -16,7 +16,7 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'ternjs/tern_for_vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'thoughtbot/vim-rspec'
-
+Plug 'mhinz/vim-startify'
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 
