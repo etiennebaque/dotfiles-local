@@ -82,6 +82,6 @@ autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
 set updatetime=100
 
 " formatting args/hashes
-nnoremap <leader>ff $v%lohc<CR><CR><Up><C-r>"<Esc>:s/,/,\r/g<CR>:'[,']norm ==<CR>
+nnoremap <leader>ff $v%lohc<CR><CR><Up><C-r>"<Esc>:s/,/,\r/g<CR>:'[,']norm ==<CR>:noh<CR>
 
 set hidden
