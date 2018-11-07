@@ -81,4 +81,7 @@ autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
 " vim-gitgutter
 set updatetime=100
 
+" formatting args/hashes
+nnoremap <leader>ff $v%lohc<CR><CR><Up><C-r>"<Esc>:s/,/,\r/g<CR>:'[,']norm ==<CR>
+
 set hidden
