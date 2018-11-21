@@ -21,6 +21,7 @@ Plug 'mhinz/vim-startify'
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
 UnPlug 'ctrlp.vim'
 UnPlug 'vim-elixir'
