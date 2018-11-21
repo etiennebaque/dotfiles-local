@@ -67,6 +67,7 @@ let g:airline#extensions#ale#enabled = 0
 let g:ale_linters = {
 \   'ruby': ['ruby', 'rubocop']
 \}
+let g:ale_echo_msg_format = '[%linter%] %s'
 
 " copy to clipboard
 set clipboard=unnamed
