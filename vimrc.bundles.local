@@ -2,7 +2,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-airline/vim-airline'
 Plug 'bogado/file-line'
-Plug 'Ardakilic/vim-tomorrow-night-theme'
+Plug 'etiennebaque/vim-tomorrow-night-theme'
 Plug 'mtth/scratch.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
