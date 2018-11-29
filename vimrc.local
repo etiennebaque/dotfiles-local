@@ -97,3 +97,17 @@ nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 
+" mode change and save made easier
+imap jk <esc>
+imap kj <esc>
+imap <C-s> <esc>:w<cr>
+
+" Keep at least 4 lones below cursor
+set scrolloff=4
+
+" Command aliases for typoed commands (accidentally holding shift too long)
+command! Q q " Bind :Q to :q
+command! W w
+command! Qa qa
+command! Qw qw
+command! E e
