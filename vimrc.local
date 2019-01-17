@@ -79,10 +79,10 @@ let g:ag_highlight=1
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
 
-" bind K to grep word under cursor.
-" Leader + k will prompt for folder to search in.
+" grep globally/in file shortcuts
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 nnoremap <leader>k :Ag '<C-R><C-W>'<Space>
+nnoremap <leader>/ /<C-R><C-W><CR>
 
 set re=1
 autocmd FileType css,scss,sass setlocal omnifunc=csscomplete#CompleteCSS
