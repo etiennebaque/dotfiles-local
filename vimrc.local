@@ -61,6 +61,7 @@ let g:scratch_autohide = 1
 
 " ALE settings
 highlight link ALEWarning NONE
+highlight link ALEError NONE
 highlight ALEErrorSign ctermfg=255 ctermbg=124 guifg=#fb4934 guibg=#3c3836
 highlight ALEWarningSign ctermfg=255 ctermbg=130 guifg=#fe8019 guibg=#3c3836
 let g:airline#extensions#ale#enabled = 0
