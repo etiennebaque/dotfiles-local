@@ -14,7 +14,7 @@ set-window-option -g pane-base-index 1
 set-option -g allow-rename off
 
 # Date and time
-set -g status-right '#[fg=colour233,bg=colour241,bold] %d/%m #[fg=colour233,bg=colour245,bold] %H:%M:%S '
+set -g status-right '#[fg=colour233,bg=colour241,bold] %d/%m #[fg=colour233,bg=colour245,bold] %H:%M '
 set -g status-right-length 50
 set -g status-position top
 
