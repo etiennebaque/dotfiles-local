@@ -22,8 +22,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'jgdavey/vim-blockle'
 
+UnPlug 'vim-run-interactive'
 UnPlug 'ctrlp.vim'
 UnPlug 'vim-elixir'
 UnPlug 'vim-go'
 UnPlug 'vim-slim'
+UnPlug 'vim-projectionist'
 
