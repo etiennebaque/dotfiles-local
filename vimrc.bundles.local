@@ -6,7 +6,6 @@ Plug 'etiennebaque/vim-tomorrow-night-theme'
 Plug 'mtth/scratch.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'henrik/vim-indexed-search'
 
 Plug 'sheerun/vim-polyglot'
