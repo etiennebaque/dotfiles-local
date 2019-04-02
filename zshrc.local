@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="simple"
 
-plugins=(git gitfast history ssh-agent bundler history-substring-search brew ruby)
+plugins=(git gitfast history brew ruby)
 
 source $ZSH/oh-my-zsh.sh
 export PROMPT='%{$fg[yellow]%}%n@%m %{$fg[green]%}%~%{$fg_bold[blue]%}$(git_prompt_info)%{$reset_color%} '
