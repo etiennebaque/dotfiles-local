@@ -118,8 +118,8 @@ command! E e
 " Replace old style ruby hashes with new style
 map <Leader>> :s<Home>silent! <End>@:\([^: =({})]\+\)\s*=>\s*@\1: @g<CR> :nohlsearch<CR>
 
-" Replace what's under the cursor
-nnoremap <leader>r :%s/<C-R><C-W>/
+" Replace what's under the cursor in entire file
+nnoremap <leader>r :%s/<C-R><C-W>//g<Left><Left>
 
 " Neovim ruby support
 let g:ruby_host_prog = 'rvm system do neovim-ruby-host'
