@@ -41,9 +41,11 @@ nnoremap <leader>nf :NERDTreeFind<CR>
 map m <Plug>(easymotion-s)
 nnoremap <C-]> g<C-]>
 
+" Buffers
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 nnoremap <C-X> :bp <BAR> bd #<CR>
+nnoremap <leader>p :Buffers<CR>
 nmap <leader>bs :ls<CR>
 set hidden " Hide buffers when they are abandoned
 
