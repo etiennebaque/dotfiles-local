@@ -30,16 +30,15 @@ nn <script>   <SID>ws>   <C-W>><SID>ws
 nn <script>   <SID>ws<   <C-W><<SID>ws
 nmap          <SID>ws    <Nop>
 
-nmap          <F7>       :tabp<ENTER>
-nmap          <F8>       :tabn<ENTER>
-nmap          <C-Y>      :tabe<ENTER>
+" Search files
+nmap <C-P> :FZF<ENTER>
 
-nmap          <C-P>      :FZF<ENTER>
-
+" NERDTree commands
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
+
+" Easymotion
 map m <Plug>(easymotion-s)
-nnoremap <C-]> g<C-]>
 
 " Buffers
 nnoremap <Tab> :bnext<CR>
@@ -49,11 +48,8 @@ nnoremap <leader>p :Buffers<CR>
 nmap <leader>bs :ls<CR>
 set hidden " Hide buffers when they are abandoned
 
-noremap <silent> <C-S>          :update<CR>
-vnoremap <silent> <C-S>         <C-C>:update<CR>
-inoremap <silent> <C-S>         <C-O>:update<CR>
-
 nnoremap <leader>gb :Gblame<CR>
+nnoremap <C-]> g<C-]>
 
 set tags=./tags,tags;
 set wildignore+=log/**
