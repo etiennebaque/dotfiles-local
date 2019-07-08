@@ -111,6 +111,7 @@ command! Q q " Bind :Q to :q
 command! W w
 command! Qa qa
 command! Qw qw
+command! Wq wq
 command! E e
 
 " Replace old style ruby hashes with new style
