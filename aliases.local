@@ -9,5 +9,15 @@ alias copy="xclip -selection clipboard"
 alias vim="nvim"
 alias q="exit"
 
+
+function rubocop_on_diff_files () {
+  git diff master..."$1" --name-only
+  echo ''
+
+  files=( $(git diff master..."$1" --name-only) );
+  rubocop $files;
+}
+alias rubobranch='rubocop_on_diff_files "$1"'
+
 [[ -f ~/.aliases.secret ]] && source ~/.aliases.secret
 
