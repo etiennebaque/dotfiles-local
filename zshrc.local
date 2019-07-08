@@ -38,7 +38,7 @@ stty erase '^?'
 
 # Golang
 export GOPATH="$HOME/src/go"
-export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 
 # Enable Ctrl-x-e to edit command line
 autoload -U edit-command-line
