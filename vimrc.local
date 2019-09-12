@@ -122,3 +122,11 @@ nnoremap <leader>r :%s/<C-R><C-W>//g<Left><Left>
 
 " Neovim ruby support
 let g:ruby_host_prog = 'rvm system do neovim-ruby-host'
+
+" Fugitive for GitLab
+let g:fugitive_gitlab_domains = ['https://gitlab.com']
+
+" Secret config
+if filereadable($HOME . "/.vimrc.secret")
+  source ~/.vimrc.secret
+endif

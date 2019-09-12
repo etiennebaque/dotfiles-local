@@ -69,5 +69,21 @@ export PATH="/opt/nvim:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+function rubobranch() {
+  branch_name=$(git rev-parse --abbrev-ref HEAD);
+  printf "-> Running Rubocop on '%s' branch...\n" "$branch_name";
+  git diff master..."$branch" --name-only
+  echo ''
+
+  files=( $(git diff master..."$branch" --name-only) );
+  delete=(db/schema.rb)
+  files=( "${files[@]/$delete}" )
+  rubocop $files;
+
+  if [ "$?" -eq "1" ]; then
+    exit 1
+  fi
+}
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc.secret ] && source ~/.zshrc.secret
