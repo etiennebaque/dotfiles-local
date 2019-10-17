@@ -85,5 +85,7 @@ function rubobranch() {
   fi
 }
 
+source ~/.rvm/scripts/rvm
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc.secret ] && source ~/.zshrc.secret
