@@ -85,6 +85,9 @@ function rubobranch() {
   fi
 }
 
+# Map caps-lock to ctrl
+/usr/bin/setxkbmap -option 'ctrl:nocaps'
+
 source ~/.rvm/scripts/rvm
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
