@@ -69,7 +69,7 @@ export PATH="/opt/nvim:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-function rubobranch() {
+rubobranch() {
   branch_name=$(git rev-parse --abbrev-ref HEAD);
   printf "-> Running Rubocop on '%s' branch...\n" "$branch_name";
   git diff master..."$branch" --name-only
@@ -92,3 +92,4 @@ source ~/.rvm/scripts/rvm
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc.secret ] && source ~/.zshrc.secret
+[ -f ~/.scripts.local ] && source ~/.scripts.local

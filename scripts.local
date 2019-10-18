@@ -1,0 +1,32 @@
+backup_xfce() {
+  printf "Packaging Xfce desktop settings now...\n"
+
+  mkdir -p ~/xfce-desktop-backup
+  mkdir -p ~/xfce-desktop-backup/thunar
+  mkdir -p ~/xfce-desktop-backup/xfce-settings
+
+  cp -R ~/.config/Thunar/ ~/
+  cp -R ~/.config/xfce4/ ~/
+
+  mv ~/xfce4 ~/xfce-desktop-backup/xfce-settings
+  mv ~/Thunar ~/xfce-desktop-backup/thunar
+
+  tar -czvf xfce-backup.tar.gz ~/xfce-desktop-backup
+  rm -rf ~/xfce-desktop-backup
+
+  printf "Archive generated at ~/xfce-backup.tar.gz\n"
+}
+
+restore_xfce() {
+  printf "Restoring Xfce desktop settings now...\n"
+
+  tar -xzvf xfce-backup.tar.gz -C ~/
+  cd ~/xfce-desktop-backup/xfce-settings
+  mv * ~/.config
+  cd ~/xfce-desktop-backup/thunar
+  mv * ~/.config
+
+  rm ~/xfce-backup.tar.gz
+  rm -rf ~/xfce-desktop-backup
+  printf "Xfce settings restored at ~/.config\n"
+}
