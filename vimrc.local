@@ -120,6 +120,11 @@ map <Leader>> :s<Home>silent! <End>@:\([^: =({})]\+\)\s*=>\s*@\1: @g<CR> :nohlse
 " Replace what's under the cursor in entire file
 nnoremap <leader>r :%s/<C-R><C-W>//g<Left><Left>
 
+" Jump to alternate and related file
+
+nnoremap <leader>ja :A
+nnoremap <leader>jr :R
+
 " Neovim ruby support
 let g:ruby_host_prog = 'rvm system do neovim-ruby-host'
 
