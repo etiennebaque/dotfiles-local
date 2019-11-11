@@ -24,7 +24,14 @@ restore_xfce() {
 }
 
 gcsq() {
-  git commit -m 'fake message'
+  git commit -m 'Commit to squash into previous one'
   git reset HEAD~2 --soft
   git commit -C ORIG_HEAD^ --reset-author
+}
+
+unalias gd
+gd() {
+  diffs="$(git diff --shortstat)"
+  printf "\n-> %s\n\n" $diffs
+  git diff
 }
