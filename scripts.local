@@ -22,3 +22,9 @@ restore_xfce() {
   rm ~/xfce-backup.tar.gz
   printf "\nXfce settings restored at ~/.config. Log out and log back in.\n"
 }
+
+gcsq() {
+  git commit -m 'fake message'
+  git reset HEAD~2 --soft
+  git commit -C ORIG_HEAD^ --reset-author
+}
