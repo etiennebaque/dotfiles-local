@@ -93,3 +93,4 @@ source ~/.rvm/scripts/rvm
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f ~/.zshrc.secret ] && source ~/.zshrc.secret
 [ -f ~/.scripts.local ] && source ~/.scripts.local
+[ -f ~/.scripts.secret ] && source ~/.scripts.secret

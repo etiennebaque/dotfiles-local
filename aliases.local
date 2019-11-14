@@ -15,5 +15,8 @@ alias prettyjson='python -m json.tool'
 
 alias rebase_with_master="git co master;git pull origin master;git co -;git rebase master"
 
+unalias grm
+alias grm='git rebase master'
+
 [[ -f ~/.aliases.secret ]] && source ~/.aliases.secret
 
