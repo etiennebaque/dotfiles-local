@@ -60,11 +60,8 @@ create_pr() {
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export SILENCE_RBENV_DEPRECATION=1
 
-# Yarn
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH" 
-
-# Nvim
-export PATH="/opt/nvim:$PATH"
+# Yarn and others
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin:$PATH" 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

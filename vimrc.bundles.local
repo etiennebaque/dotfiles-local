@@ -8,7 +8,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'henrik/vim-indexed-search'
 
-Plug 'sheerun/vim-polyglot'
 Plug 'vim-scripts/HTML-AutoCloseTag'
 Plug 'Valloric/MatchTagAlways'
 Plug 'jelera/vim-javascript-syntax'
