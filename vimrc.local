@@ -121,8 +121,11 @@ map <Leader>> :s<Home>silent! <End>@:\([^: =({})]\+\)\s*=>\s*@\1: @g<CR> :nohlse
 nnoremap <leader>r :%s/<C-R><C-W>//g<Left><Left>
 
 " Jump to alternate and related file
-nnoremap <leader>ja :A
-nnoremap <leader>jr :R
+nnoremap <leader>ja :A<cr>
+nnoremap <leader>jr :R<cr>
+
+" Copy current file path and line number
+nnoremap <leader>y :let @+=expand("%") . ':' . line(".")<CR>
 
 " Neovim ruby support
 let g:ruby_host_prog = 'rvm system do neovim-ruby-host'

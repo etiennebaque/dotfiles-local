@@ -18,5 +18,7 @@ alias rebase_with_master="git co master;git pull origin master;git co -;git reba
 unalias grm
 alias grm='git rebase master'
 
+alias sr='spring rspec $1'
+
 [[ -f ~/.aliases.secret ]] && source ~/.aliases.secret
 

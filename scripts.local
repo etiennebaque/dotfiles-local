@@ -32,6 +32,6 @@ gcsq() {
 unalias gd
 gd() {
   diffs="$(git diff --shortstat)"
-  printf "\n-> %s\n\n" $diffs
   git diff
+  printf "\n-> %s\n\n" $diffs
 }
