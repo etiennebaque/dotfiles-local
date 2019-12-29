@@ -20,7 +20,7 @@ restore_xfce() {
   cd ~
   tar -xzvf xfce-backup.tar.gz
   rm ~/xfce-backup.tar.gz
-  printf "\nXfce settings restored at ~/.config. Log out and log back in.\n"
+  printf "\nXfce settings restored at ~/.config. Restart your system now.\n"
 }
 
 gcsq() {
@@ -32,6 +32,9 @@ gcsq() {
 unalias gd
 gd() {
   diffs="$(git diff --shortstat)"
+
   git diff
-  printf "\n-> %s\n\n" $diffs
+  if [[ -n $diffs ]]; then
+    printf "\n-> %s\n\n" $diffs
+  fi
 }
