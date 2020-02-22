@@ -60,6 +60,9 @@ create_pr() {
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export SILENCE_RBENV_DEPRECATION=1
 
+# Get At5 apps to use native Gtk+ style
+export QT_QPA_PLATFORMTHEME=gtk2
+
 # Yarn and others
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/bin:$PATH" 
 

@@ -127,6 +127,9 @@ nnoremap <leader>jr :R<cr>
 " Copy current file path and line number
 nnoremap <leader>y :let @+=expand("%") . ':' . line(".")<CR>
 
+" Fuzzy-search on opened buffers
+nnoremap <leader>bf :Buffers<cr>
+
 " Neovim ruby support
 let g:ruby_host_prog = 'rvm system do neovim-ruby-host'
 
