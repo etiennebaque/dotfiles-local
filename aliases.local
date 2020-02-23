@@ -20,5 +20,7 @@ alias ga="git add ."
 
 alias sr='spring rspec $1'
 
+alias reload='rcup;exec $SHELL'
+
 [[ -f ~/.aliases.secret ]] && source ~/.aliases.secret
 
