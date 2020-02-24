@@ -1,26 +1,8 @@
 backup_xfce() {
-  printf "Packaging Xfce desktop settings now...\n"
-
-  mkdir -p ~/xfce-backup
-  cp -R ~/.config ~/xfce-backup
-
-  cd ~/xfce-backup
-  tar -czvf xfce-backup.tar.gz .
-  mv xfce-backup.tar.gz ~
-  rm -rf ~/xfce-backup
-  cd ~
-
-  printf "\nArchive generated at ~/xfce-backup.tar.gz\n"
-}
-
-restore_xfce() {
-  printf "Restoring Xfce desktop settings now...\n"
-
-  mv ~/.config ~/.config-backup
-  cd ~
-  tar -xzvf xfce-backup.tar.gz
-  rm ~/xfce-backup.tar.gz
-  printf "\nXfce settings restored at ~/.config. Restart your system now.\n"
+  cd ~/src/ansible-debian/roles/xfce/files
+  rm -rf config
+  cp -r ~/.config config
+  cd -
 }
 
 gcsq() {
