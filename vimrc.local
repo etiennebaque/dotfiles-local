@@ -127,6 +127,16 @@ nnoremap <leader>jr :R<cr>
 " Copy current file path and line number
 nnoremap <leader>y :let @+=expand("%") . ':' . line(".")<CR>
 
+" vim-startify: do not change directory when opening a file from startify
+let g:startify_change_to_dir = 0
+
+let g:startify_lists = [
+      \ { 'type': 'dir',       'header': ['   '. getcwd()] },
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+      \ { 'type': 'commands',  'header': ['   Commands']       },
+      \ ]
+
 " Fuzzy-search on opened buffers
 nnoremap <leader>bf :Buffers<cr>
 
