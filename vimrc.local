@@ -131,7 +131,7 @@ nnoremap <leader>y :let @+=expand("%") . ':' . line(".")<CR>
 let g:startify_change_to_dir = 0
 
 let g:startify_lists = [
-      \ { 'type': 'dir',       'header': ['   '. getcwd()] },
+      \ { 'type': 'dir',       'header': ['   '. getcwd()]     },
       \ { 'type': 'sessions',  'header': ['   Sessions']       },
       \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
       \ { 'type': 'commands',  'header': ['   Commands']       },

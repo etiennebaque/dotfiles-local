@@ -2,6 +2,10 @@ backup_xfce() {
   cd ~/src/ansible-debian/roles/xfce/files
   rm -rf config
   cp -r ~/.config config
+  rm -rf config/vlc
+  rm -rf config/nordvpn
+  rm -rf config/deluge
+  rm -rf config/libreoffice
   cd -
 }
 
