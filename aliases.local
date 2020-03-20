@@ -22,6 +22,7 @@ alias sr='spring rspec $1'
 
 alias reload='rcup;exec $SHELL'
 alias bye="xfce4-session-logout"
+alias n="cd ~/Documents/notes;tmux rename-window notes;vim"
 
 [[ -f ~/.aliases.secret ]] && source ~/.aliases.secret
 
