@@ -6,6 +6,8 @@ backup_xfce() {
   rm -rf config/nordvpn
   rm -rf config/deluge
   rm -rf config/libreoffice
+  rm -rf config/syncthing
+  rm -rf config/systemd
   cd -
 }
 
