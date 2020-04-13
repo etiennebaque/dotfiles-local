@@ -8,6 +8,7 @@ backup_xfce() {
   rm -rf config/libreoffice
   rm -rf config/syncthing
   rm -rf config/systemd
+  rm -rf config/protonmail
   cd -
 }
 
