@@ -9,6 +9,9 @@ backup_xfce() {
   rm -rf config/syncthing
   rm -rf config/systemd
   rm -rf config/protonmail
+  rm -rf config/Clementine
+  rm -rf config/GIMP
+  rm -rf config/asunder
   cd -
 }
 
