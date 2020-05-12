@@ -3,8 +3,7 @@ alias t="tmux"
 
 # Aliases for Rails
 alias reset_test_db='RAILS_ENV=test bundle exec rake db:drop db:create db:schema:load db:seed_fu'
-
-alias recent="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))' | head -n 5"
+alias recent="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(refname:short) %(objectname:short) - %(contents:subject) - %(authorname) (%(committerdate:relative))' | head -n 8 | fzf --reverse --height 30% | awk '{print \$1;}' | xargs git checkout"
 
 alias copy="xclip -selection clipboard"
 alias vim="nvim"
