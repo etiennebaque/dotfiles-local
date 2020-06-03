@@ -33,9 +33,10 @@ nmap          <SID>ws    <Nop>
 " Search files
 nmap <C-P> :FZF<ENTER>
 
-" NERDTree commands
+" NERDTree
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
+let NERDTreeShowHidden=1
 
 " Easymotion
 map m <Plug>(easymotion-s)
