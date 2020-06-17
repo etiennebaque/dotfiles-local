@@ -12,6 +12,11 @@ backup_xfce() {
   rm -rf config/Clementine
   rm -rf config/GIMP
   rm -rf config/asunder
+  rm -rf config/easytag
+  rm -rf config/quodlibet
+  rm -rf config/beets
+  rm -rf config/Mullvad\ VPN
+
   cd -
 }
 
